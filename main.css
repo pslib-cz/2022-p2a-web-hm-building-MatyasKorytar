@@ -49,6 +49,7 @@ html {
 }
 
 .page__hero_title {
+  filter: brightness(200%);
   color: var(--white);
   font-weight: 800;
   margin-top: 157px;
@@ -58,6 +59,7 @@ html {
 
 .page__hero_text {
   color: var(--white);
+  filter: brightness(200%);
   font-weight: 300;
   height: 27px;
   align-self: center;
@@ -116,11 +118,11 @@ html {
 
 }
 
-.image--even {
+.image__even {
   border-radius: 0 0 0 40px;
 }
 
-.image--odd {
+.image__odd {
   border-radius: 0 0 40px 0;
 }
 
