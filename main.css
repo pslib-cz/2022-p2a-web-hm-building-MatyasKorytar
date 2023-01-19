@@ -15,6 +15,7 @@ html {
   margin-bottom: 40px;
  }
  .menu {
+  margin-top: 4%;
   display: none;
   background-color: var(--orange);
 }
@@ -202,7 +203,7 @@ html {
 
 .teaser__text {
   white-space: nowrap;
-  margin: 23px;
+  margin-left: 23px;
   color: var(--white);
   font-size: 17px;
   font-weight: 700;
@@ -228,5 +229,121 @@ html {
 }
 
 .teaser__text3 {
-  padding-top: 60px;
+  padding-top: 33px;
+    position: absolute;
+    margin-left: -236px;
+}
+
+.reference {
+  margin-left: 20px;
+}
+
+.reference__h1 {
+  margin-bottom: -15px;
+  font-size: x-large;
+}
+
+.reference__p {
+  font-size: medium;
+  margin-top: 40px;
+  padding-top: 20px;
+  font-weight: 400;
+}
+
+.reference__section {
+
+}
+
+.referece__card {
+}
+
+.reference__image {
+  height: 200px;
+  width: 320px;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.refimage1{
+  background-image: url(./img/hasicka_zbrojnice320.jpg);
+}
+
+.refimage2{
+  background-image: url(./img/pracky320.jpg);
+}
+
+.refimage3{
+  background-image: url(./img/zem320.jpg);
+}
+.reference__hh1
+{
+  margin-left: 20px;
+  font-size: x-large;
+  text-align: center;
+}
+.reference__pp{
+  margin-left: 20px;
+  margin-top: -8px;
+  text-align: center;
+  margin-bottom: 33px;
+}
+
+.reference__button {
+  margin-left: 93px;
+  width: 170px;
+  display: block;
+  color: var(--white);
+  background-color: var(--orange);
+  padding: 12px 40px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-bottom: 108px;
+}
+
+.footer{
+  height: 283px;
+  width:auto;
+  left: 0px;
+  top: 3725px;
+  border-radius: 0px;
+  background-color: var(--orange);
+}
+.footer__text {
+  text-align:center;
+  color: var(--white);
+  font-weight: 800;
+  font-size: larger;
+  padding-top: 40px ;
+
+}
+
+.footer__podtext{
+  text-align: center;
+  margin-top: 40px;
+  color: var(--white);
+  font-weight: 300;
+}
+
+.footer__button {
+  width: 170px;
+  display: block;
+  color: var(--orange);
+  background-color: var(--white);
+  padding: 20px 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-left: 64.5px;
+  margin-top: 40px;
 }
