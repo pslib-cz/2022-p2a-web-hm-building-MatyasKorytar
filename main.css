@@ -19,13 +19,17 @@ html {
   display: none;
   background-color: var(--orange);
 }
-.menu a {
 
+menu {
+  margin-top: 4%;
+  display: flex;
+  background-color: var(--orange);
+}
+.menu a {
   display: block;
   text-align: left;
   padding: 10px;
   color: white;
-  text-decoration: none;
 }
 
 .menu-icon {
@@ -346,4 +350,13 @@ html {
   cursor: pointer;
   margin-left: 64.5px;
   margin-top: 40px;
+}
+
+.onas__ul {
+  
+}
+
+.onas__li::marker {
+  color: var(--orange);
+  font-size: larger;
 }
