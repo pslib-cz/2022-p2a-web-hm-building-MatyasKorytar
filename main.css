@@ -355,7 +355,9 @@ menu {
 .onas__ul {
   
 }
-
+.onas {
+  margin-left: 20px;
+}
 .onas__li::marker {
   color: var(--orange);
   font-size: larger;
