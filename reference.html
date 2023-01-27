@@ -9,17 +9,30 @@
     <title>Document</title>
 </head>
 <body>
-        <div class="nav__mobile"> 
-            <img class="logo" src="./img/logo.png" alt="logo" />
-            <a class="MENUtxt">MENU</a>
-            <button class="menu-icon" data-state="closed">☰</button>
-    <nav class="menu">
-      <a href="index.html">Domů</a>
-      <a href="index.html">Služby</a>
-      <a href="reference.html">Reference</a>
-      <a href="onas.html">O nás</a>
-      <a href="kontakt.html">Kontakt</a>
-    </nav>
+    <nav class="navbar">
+        <a href="./index.html" class="navbar__logo"><img src="./img/logo.png" alt="logo" width="130px"></a>
+        <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">DOMŮ</a>
+            <a class="nav-link" href="./index.html">SLUŽBY</a>
+            <a class="nav-link" href="reference.html">REFERENCE</a>
+            <a class="nav-link" href="onas.html">O NÁS</a>
+            <a class="nav-link" href="kontakt.html">KONTAKT</a>
+          </li>
+        </menu>
+        <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)">menu</a></div>
+      </nav>
+      <script>
+        const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+        for (const btn of hamburgerButtons) {
+          btn.onclick = (event) => {
+            const menus = document.querySelectorAll(".hamburger-menu-list");
+            for (const menu of menus) {
+              menu.classList.toggle("navbar__menu--hidden");
+            }
+          }
+        }
+      </script>
     <div class="reference">
         <h1 class="reference__h1">Reference</h1>
         <p class="reference__p">Stojí za námi <strong>kavlitně vyhotovené zakázky</strong> dle konkrétních požadavků zadavatelů <strong>podepřené letitými zkušenostmi ve stavebnictví.</strong> To, že <strong>obrátit se na právě nás je vhodná volba potvrdí naši klienti</strong>, na jejichž stavbách jsme zanechali náš rukopis. Reference jsou jen zlomkem naší práce, za kterou se rozhodně nestydíme.</p>

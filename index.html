@@ -9,17 +9,30 @@
     <title>Domu</title>
 </head>
 <body>
-    <div class="nav__mobile"> 
-        <img class="logo" src="./img/logo.png" alt="logo" href="index.html"/>
-        <a class="MENUtxt">MENU</a>
-        <button class="menu-icon" data-state="closed">☰</button>
-<nav class="menu">
-  <a href="index.html">Domů</a>
-  <a href="index.html">Služby</a>
-  <a href="reference.html">Reference</a>
-  <a href="onas.html">O nás</a>
-  <a href="kontakt.html">Kontakt</a>
-</nav>
+    <nav class="navbar">
+        <a href="./index.html" class="navbar__logo"><img src="./img/logo.png" alt="logo" width="130px"></a>
+        <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">DOMŮ</a>
+            <a class="nav-link" href="./index.html">SLUŽBY</a>
+            <a class="nav-link" href="reference.html">REFERENCE</a>
+            <a class="nav-link" href="onas.html">O NÁS</a>
+            <a class="nav-link" href="kontakt.html">KONTAKT</a>
+          </li>
+        </menu>
+        <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)">menu</a></div>
+      </nav>
+      <script>
+        const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+        for (const btn of hamburgerButtons) {
+          btn.onclick = (event) => {
+            const menus = document.querySelectorAll(".hamburger-menu-list");
+            for (const menu of menus) {
+              menu.classList.toggle("navbar__menu--hidden");
+            }
+          }
+        }
+      </script>
     </div>
     <div class="page__hero">
         <h1 class="page__hero_title">HM Building.cz s.r.o.</h1>
