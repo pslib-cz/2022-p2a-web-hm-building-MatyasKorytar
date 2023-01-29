@@ -392,5 +392,74 @@ html {
 }
 .onas__li::marker {
   color: var(--orange);
-  font-size: larger;
+  font-size: xx-large;
 }
+
+.kontakt {
+  margin-left: 21px;
+}
+
+svg {
+  margin-top: 25px;
+  color: #EB6C27;
+}
+
+.kontakt_ikona {
+  margin-left: -26px;
+  margin-bottom: 7px;
+}
+
+.kontakt_txt {
+  color: var(--orange);
+  font-weight: 700;
+  margin-top: -26px;
+  margin-left: 66px;
+}
+
+.kontakt_mapaIMG {
+  margin-left: 15px;
+}
+
+.h2_kontakty {
+  font-weight: 700;
+}
+
+
+.dotaznik {
+  margin-left: 20px;
+}
+.dotaznik__text {
+  font-weight: 500;
+}
+
+textarea {
+  border: 2px solid #EB6C27;
+}
+.orange_border {
+  border: 2px solid #EB6C27;
+
+}
+
+.kontakty__button {
+  margin-top: 35px;
+  width: 288px;
+  height: 55px;
+  display: block;
+  color: var(--white);
+  background-color: var(--orange);
+  padding: 12px 40px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-bottom: 108px;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: -10px;
+}
+

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="main.css"> 
+    <link rel="stylesheet" href="normalize.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="./index.html" class="navbar__logo"><img src="./img/logo.png" alt="logo" width="130px"></a>
+        <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">DOMŮ</a>
+            <a class="nav-link" href="./index.html">SLUŽBY</a>
+            <a class="nav-link" href="reference.html">REFERENCE</a>
+            <a class="nav-link" href="onas.html">O NÁS</a>
+            <a class="nav-link" href="kontakt.html">KONTAKT</a>
+          </li>
+        </menu>
+        <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)">menu</a></div>
+      </nav>
+      <script>
+        const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+        for (const btn of hamburgerButtons) {
+          btn.onclick = (event) => {
+            const menus = document.querySelectorAll(".hamburger-menu-list");
+            for (const menu of menus) {
+              menu.classList.toggle("navbar__menu--hidden");
+            }
+          }
+        }
+      </script>
+    </div>
+    <div class="kontakt">
+        <h1>Kontaktujte nás</h1>
+        <p>Zavolejte anebo nám napište... kvalitní<br> komunikace je jeden z pilířů, na kterém stavíme.</p>
+        <div class="kontakt_icons">
+        <div class="kontakty">
+            <svg width="30" height="30">
+                <circle cx="15" cy="15" r="15" fill="#EB6C27"/>
+            </svg>
+            <img class="kontakt_ikona" src="./img/icons8-phone-24.png" width="15" height="15" >
+            <p class="kontakt_txt">+420 775 550 564</p>
+        </div>
+        <div class="kontakty">
+            <svg width="30" height="30">
+                <circle cx="15" cy="15" r="15" fill="#EB6C27"/>
+            </svg>
+            <img class="kontakt_ikona" src="./img/icons8-secured-letter-50.png" width="15" height="15" >
+            <p class="kontakt_txt">stavby@hm-building.cz</p>
+        </div>
+        <div class="kontakty">
+            <svg width="30" height="30">
+                <circle cx="15" cy="15" r="15" fill="#EB6C27"/>
+            </svg>  
+            <img class="kontakt_ikona" src="./img/icons8-place-marker-64.png" width="15" height="15" >
+            <p class="kontakt_txt">Křižanská 12, Liberec XXII-Horní Suchá</p>
+        </div>
+    </div>
+    </div>
+    <a href="https://mapy.cz/zakladni?q=K%C5%99i%C5%BEansk%C3%A1%2012%2C%20Liberec%20XXII-Horn%C3%AD%20Such%C3%A1&source=addr&id=9085775&ds=1&x=15.0022034&y=50.7607286&z=17"><img class="kontakt_mapaIMG"src="./img/mapa.png" alt="mapa"></a>
+    <div class="kontakt">
+        <h2 class="h2_kontakty">Nezávazná poptávka služeb</h2>
+        <p>Plácneme si pro Váš projekt? Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+    </div>
+    <div class="dotaznik">
+        <form>
+            <label class="dotaznik__text"><strong>Jméno a příjmení</strong></label><br>
+            <input  class="orange_border" type="text" name="name" style="width: 319px; height: 45px;" required><br>
+            
+            <label class="dotaznik__text"><strong>E-mail</strong></label><br>
+            <input  class="orange_border" type="email" name="email" style="width: 319px; height: 45px;" required><br>
+            
+            <label class="dotaznik__text"><strong>Telefon</strong></label><br>
+            <input class="orange_border" type="tel" name="telephone" style="width: 319px; height: 45px;"><br>
+            
+            <label class="dotaznik__text"><strong>Poptávaná služba</strong></label><br>
+            <select  class="orange_border" name="service" style="width: 319px; height: 45px;"><br>
+              <option value="design">Novostavba</option>
+              <option value="development">Průmyslová stavba</option>
+              <option value="consulting">Rekonstrukce domu</option>
+            </select><br>
+            
+            <label class="dotaznik__text"><strong>Poznámka</strong></label><br>
+            <textarea name="note" style="width: 319px; height: 280px;"></textarea><br>
+            
+            <input class="kontakty__button" type="submit" value="Odeslat nezávaznou poptávku">
+          </form>
+    </div>
+</body>
+</html>
