@@ -1,0 +1,50 @@
+:root {
+    --orange: #EB6C27;
+    --white: #ffffff;
+  }
+@media (min-width: 1281px) {
+.page__hero {
+    background-image: none;
+      }    
+.navbar__menu {
+    height: 1080px;
+    width: 1920px;
+    background-image: url(./img/1.png);
+
+   }
+
+   .nav-item {
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    color: gray;
+  }
+  .nav-link {
+    color: gray;
+  }
+
+  .navbar {
+
+  }
+
+   .page__hero_title {
+    color: var(--white);
+    font-weight: 800;
+    margin-top: -357px;
+    white-space: nowrap;
+    font-size: xx-large;
+    width: max-content;
+  }
+  
+  .page__hero_text {
+    color: var(--white);
+    font-weight: 300;
+    align-self: center;
+    margin-top: 0px;
+    height: 163px;
+    width: 1119px;
+    font-size: xx-large;
+
+  }
+
+    }
