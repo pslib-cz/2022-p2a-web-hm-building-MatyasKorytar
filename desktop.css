@@ -7,33 +7,48 @@
     background-image: none;
       }    
 .navbar__menu {
-    height: 1080px;
     width: 1920px;
-    background-image: url(./img/1.png);
-
+    background-color: hsla(0, 0%, 0%, 0.0);
    }
-
+   .navbar__logo {
+    padding-right: 900px ;
+    margin-top: 15px;
+   }
    .nav-item {
     background-color: var(--white);
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    display: flex;
     color: gray;
   }
   .nav-link {
     color: gray;
+    display:block;
+    margin-left: 50px;
   }
-
+  .nav-link:active { 
+    background-color: var(--orange);
+  }
+  .nav-item {
+    background-color: none;
+  }
   .navbar {
-
+    display: flex;
+    background-image: url(./img/bg1920filter.jpg);
+    background-repeat: no-repeat;
   }
-
+  .page__hero {
+    filter: none;
+  }
    .page__hero_title {
     color: var(--white);
     font-weight: 800;
     margin-top: -357px;
     white-space: nowrap;
-    font-size: xx-large;
     width: max-content;
+    font-size: 120px;
+    margin-left: 400px;
+    margin-top: -775px;
+    margin-bottom: 275px;
+    filter: none;
   }
   
   .page__hero_text {
@@ -44,7 +59,18 @@
     height: 163px;
     width: 1119px;
     font-size: xx-large;
+    margin-left: 400px;
+    margin-top: -275px;
 
   }
 
+  .page__hero {
+    background-image: none;
+  }
+
+  .nav__desktop {
+    display: flex;
+    background-color: var(--white);
+    margin-bottom: 1080px;
+  }
     }
