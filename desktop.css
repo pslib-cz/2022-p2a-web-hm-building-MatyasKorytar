@@ -110,4 +110,100 @@
       height: 307px;
       width: 729px;
     }
+
+    .teaser {
+      margin-top: 42px;
+      padding-top: 50px;
+      background-image: url(./img/background.png);
+      height: min-content;
+      background-size: 100vw;
+      height: 458px;
+      background-repeat: no-repeat;
+    }
+
+    .teaser__text {
+      font-size: 30px;
+    }
+
+    .teaser__text2 {
+      margin-left: 2px;
+    }
+
+    .teaser__text1 {
+      margin-left: 204px;
+    }
+    .teaser__text3 {
+      margin-left: -830px;
+      margin-top: 15px;
+    }
+
+    .teaser__button {
+      margin-top: 264px;
+      margin-left: 204px;
+      font-size: 20px;
+      padding: 20px 80px;
+    }
+
+    .reference {
+      margin-left: 495px;
+    }
+    .reference__h1 {
+      font-size: 60px;
+
+    }
+
+      .desktop_reposition {
+        margin-left: 550px;
+        margin-top: -70px;
+      }
+
+      .reference__p {
+        max-width: 890px;
+        text-align: center;
+      }
+    
+      .flex {
+        display: flex;
+        margin-left: 205px;
+        gap: 80px;
+      }
+
+      .refimage1, .refimage2, .refimage3 {
+        width: 450px;
+        height: 280px;
+      }
+
+      .refimage1 {
+        background-image: url(./img/hasicka_zbrojnice.jpg);
+      }
+
+      .refimage2 {
+       /* background-color: rgba(235, 108, 39, 0.1);*/
+        background-image: url(./img/pracky.jpg);
+      }
+
+      .refimage3 {
+        background-image: url(./img/zem.jpg);
+      }
+
+      .reference__button {
+        margin-left: 854px;
+      }
+
+      .footer {
+        height: 356px;
+      }
+
+      .footer__text {
+        font-size: 60px;
+      }
+
+      .footer__podtext {
+        font-size: 25px;
+        line-height: 34.05px;
+      }
+
+      .footer__button {
+        margin-left: 872.5px;
+      }
   }
